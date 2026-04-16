@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ - Galaxy Badminton</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container": "#f0edec",
+            "on-secondary-fixed": "#161d1f",
+            "surface-container-low": "#f6f3f2",
+            "on-error-container": "#93000a",
+            secondary: "#586062",
+            "on-tertiary-fixed": "#400012",
+            tertiary: "#a72e4a",
+            "on-error": "#ffffff",
+            "surface-variant": "#e5e2e1",
+            "primary-fixed-dim": "#5adf82",
+            "surface-container-highest": "#e5e2e1",
+            "primary-container": "#008740",
+            "inverse-on-surface": "#f3f0ef",
+            "on-tertiary-fixed-variant": "#8a1636",
+            "on-surface": "#1c1b1b",
+            "on-tertiary": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#5d6466",
+            "on-primary-fixed": "#00210b",
+            error: "#ba1a1a",
+            "outline-variant": "#bccabb",
+            "tertiary-fixed": "#ffd9dd",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#ebe7e7",
+            "on-tertiary-container": "#fffbff",
+            "surface-tint": "#006d33",
+            "primary-fixed": "#78fc9c",
+            "tertiary-container": "#c84761",
+            "on-background": "#1c1b1b",
+            "on-primary-container": "#f7fff3",
+            "secondary-fixed-dim": "#c1c8ca",
+            "inverse-primary": "#5adf82",
+            primary: "#006b32",
+            "secondary-fixed": "#dde4e6",
+            "on-surface-variant": "#3d4a3e",
+            "on-secondary-fixed-variant": "#41484a",
+            background: "#fcf9f8",
+            "surface-dim": "#dcd9d9",
+            surface: "#fcf9f8",
+            "on-primary-fixed-variant": "#005225",
+            "on-primary": "#ffffff",
+            "surface-bright": "#fcf9f8",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#dae1e3",
+            outline: "#6d7b6d",
+            "tertiary-fixed-dim": "#ffb2bb",
+            "inverse-surface": "#313030"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Lexend", "sans-serif"],
+            body: ["Inter", "sans-serif"],
+            label: ["Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24; }
+    .glass-header { background: rgba(252, 249, 248, 0.8); backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+  <nav class="fixed top-0 w-full z-50 glass-header flex justify-between items-center px-8 py-4 shadow-[0px_20px_40px_rgba(28,27,27,0.06)]">
+    <div class="text-2xl font-bold tracking-tighter text-on-surface font-headline">Galaxy Badminton</div>
+    <div class="hidden md:flex items-center gap-8">
+      <nav id="mainNav" class="flex items-center gap-8"></nav>
+    </div>
+    <div id="headerAuth" class="flex items-center gap-3 shrink-0"></div>
+  </nav>
+
+  <main class="pt-20">
+    <section class="relative h-[870px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img alt="Sân cầu lông chuyên nghiệp" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnO1ug7HIvwGea3G4yqgewEAYLJtQsUYfRJ_IN5dKQNWq6wX0SiouoYQ92S4pfZQpYkeuLtSBJ9T5HKsaRyBJvlLGT9Y-oVKggGvGDzOufkn4C9V_npC8o650i4SMjUKQ7rhBNdA2olWRpC6gkr2L-vX10ZWEAr0Jz0YuqhDeKpZ4ys6S1EI-7omrWN-NcSYFEhvZxrIEJ0YKNHPsAKU92UgapUnWId5SeoeL_5mJcfsVmHCq4hOP7Drb5FBBGzYN9FwimIEqwpZT0">
+        <div class="absolute inset-0 bg-gradient-to-r from-on-surface/80 via-on-surface/40 to-transparent"></div>
+      </div>
+      <div class="relative z-10 container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="flex flex-col justify-center">
+          <h1 class="text-6xl md:text-8xl font-black font-headline text-surface leading-[0.9] tracking-tighter mb-6">
+            Đặt sân cầu lông <span class="text-primary-fixed">nhanh chóng</span>
+          </h1>
+          <p class="text-surface/80 text-xl max-w-md mb-10 font-light leading-relaxed">
+            Trải nghiệm sân chơi đẳng cấp chuyên nghiệp với hệ thống đặt chỗ thông minh.
+          </p>
+          <a href="booking.html" class="w-fit bg-primary text-on-primary px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-200 flex items-center gap-3">
+            Đặt sân ngay
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative z-20 -mt-16 container mx-auto px-8">
+      <div class="bg-surface-container-lowest p-6 rounded-full shadow-[0px_30px_60px_rgba(28,27,27,0.1)] flex flex-wrap md:flex-nowrap items-center gap-6 border border-outline-variant/10">
+        <div class="flex-1 flex items-center gap-4 px-6 border-r border-outline-variant/20">
+          <span class="material-symbols-outlined text-primary">calendar_month</span>
+          <div class="flex flex-col">
+            <span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant font-bold">Ngày chơi</span>
+            <input class="bg-transparent border-none p-0 text-on-surface font-headline font-semibold focus:ring-0 w-full" type="date">
+          </div>
+        </div>
+        <div class="flex-1 flex items-center gap-4 px-6 border-r border-outline-variant/20">
+          <span class="material-symbols-outlined text-primary">sports_handball</span>
+          <div class="flex flex-col">
+            <span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant font-bold">Chọn sân</span>
+            <select class="bg-transparent border-none p-0 text-on-surface font-headline font-semibold focus:ring-0 w-full appearance-none">
+              <option>Tất cả sân</option>
+              <option>Sân A1 - Pro</option>
+              <option>Sân A2 - Pro</option>
+              <option>Sân VIP 01</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex-1 flex items-center gap-4 px-6">
+          <span class="material-symbols-outlined text-primary">schedule</span>
+          <div class="flex flex-col">
+            <span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant font-bold">Thời gian</span>
+            <select class="bg-transparent border-none p-0 text-on-surface font-headline font-semibold focus:ring-0 w-full appearance-none">
+              <option>Mọi khung giờ</option>
+              <option>Buổi sáng</option>
+              <option>Buổi chiều</option>
+              <option>Buổi tối</option>
+            </select>
+          </div>
+        </div>
+        <button class="bg-primary-container text-on-primary-container px-10 py-4 rounded-full font-bold font-headline hover:bg-primary transition-colors">Xem lịch trống</button>
+      </div>
+    </section>
+
+    <section class="py-24 bg-surface">
+      <div class="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div class="bg-surface-container-low p-10 rounded-xl transition-all hover:bg-surface-container-highest flex flex-col gap-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span></div>
+          <h3 class="text-2xl font-bold font-headline">Địa điểm</h3>
+          <p class="text-on-surface-variant leading-relaxed">123 Đường Galaxy, Quận Cầu Lông, TP. Hồ Chí Minh</p>
+        </div>
+        <div class="bg-surface-container-low p-10 rounded-xl transition-all hover:bg-surface-container-highest flex flex-col gap-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">history</span></div>
+          <h3 class="text-2xl font-bold font-headline">Giờ mở cửa</h3>
+          <p class="text-on-surface-variant leading-relaxed">05:00 - 23:00<br>Tất cả các ngày trong tuần</p>
+        </div>
+        <div class="bg-surface-container-low p-10 rounded-xl transition-all hover:bg-surface-container-highest flex flex-col gap-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span></div>
+          <h3 class="text-2xl font-bold font-headline">Liên hệ</h3>
+          <p class="text-on-surface-variant leading-relaxed">Hotline: <a href="tel:0396501813" class="hover:text-primary">0396501813</a><br>Email: <a href="mailto:duycuongpdc@gmail.com" class="hover:text-primary">duycuongpdc@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-surface-container-low">
+      <div class="container mx-auto px-8">
+        <div class="flex justify-between items-end mb-16">
+          <div>
+            <span class="text-primary font-bold font-label uppercase tracking-[0.2em] text-xs">Phòng tập đạt chuẩn</span>
+            <h2 class="text-5xl font-black font-headline mt-2">Sân Cầu Tiêu Biểu</h2>
+          </div>
+          <button class="text-primary font-bold border-b-2 border-primary/20 hover:border-primary transition-all pb-1 mb-2">Xem tất cả sân</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+            <div class="relative h-64 overflow-hidden">
+              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Sân A1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEO6rUggVNijTT4wmsIuGtWeGUygC3L_YVEt8m-y597-W6kbRFtQ3tETq0yy1AyhFvX4BbO-0O7hu5JFhCIX38nvkEeQM6o6PeBc2Paf_5dJ-4BNgP64EbIXEnsv1LKKOBhvoqdCeLO6U8H-5vRg446fmHdK2D1BCzde_z3sZ0tC_GKShaqzwZSYuEfi_IVbER3MwKXA3tBWFSIQA_NBssuOr-iFnbU1l5d59p7gfQV2WhpvgTVl_lwhsaxQnxxUGGMRNVoIs35AGA">
+            </div>
+            <div class="p-8">
+              <h4 class="text-xl font-bold font-headline mb-2">Sân 1</h4>
+              <p class="text-on-surface-variant text-sm mb-6">Thảm Victor 5.0mm</p>
+              <button class="w-full bg-surface-container-highest text-on-surface py-3 rounded-full font-bold font-label uppercase text-xs tracking-wider group-hover:bg-primary group-hover:text-on-primary transition-colors">Xem lịch</button>
+            </div>
+          </div>
+          <div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+            <div class="relative h-64 overflow-hidden">
+              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Sân A2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU1TpVZOqMjitlcfsvl6FktJ7tWMsPsK8aW7togrOZ6yX1vkjLWhR8fAS0qR72TEi_l0VxiirEn25gO0MzvdTEuPL7rPbhVkP2NvbSnElnGTBFiHf3hu4o0-eXjl-iJRhyM9tCVdB3vJWEL7LIxyfy-Zn-CHkkDGf3DY_iZaTOhw9eadfVpEUIr9ruJFOMwwGGlXaeUEa_sVjDYcBpoJq0Juol9ojCG7VqpC-ryyu5zhPdarlVqB3KtSp-vGVWbPSuTX5GDA3_Kjqa">
+            </div>
+            <div class="p-8">
+              <h4 class="text-xl font-bold font-headline mb-2">Sân 2</h4>
+              <p class="text-on-surface-variant text-sm mb-6">Thảm Yonex AC102</p>
+              <button class="w-full bg-surface-container-highest text-on-surface py-3 rounded-full font-bold font-label uppercase text-xs tracking-wider group-hover:bg-primary group-hover:text-on-primary transition-colors">Xem lịch</button>
+            </div>
+          </div>
+          <div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+            <div class="relative h-64 overflow-hidden">
+              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Sân VIP" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjvLUmAFGaAphzLXoW32ePf3iImFde2kc7CupWUq7p49y2bG72zchZruMttELNqTnuE6s2fHDHaBty6Yliz_1IDIQq0JKQiH9kQM3nv05U6lqzxIZ4bmvdWJHaJXbyjCBsQVJPXzMlTqeGBCisYgDJxYY2bDM0rdhd3IyIAF8NJyLgx2rp4k6tDcgfZKhpghWT67cpRLkODqbli7CmEN978acrOVA4AiZ88MOxBtpxNdDODZQBOUrO_cqTMATLRM-4GvJUr23AuBj0">
+            </div>
+            <div class="p-8">
+              <h4 class="text-xl font-bold font-headline mb-2">Sân 3</h4>
+              <p class="text-on-surface-variant text-sm mb-6">Máy lạnh và ghế massage</p>
+              <button class="w-full bg-surface-container-highest text-on-surface py-3 rounded-full font-bold font-label uppercase text-xs tracking-wider group-hover:bg-primary group-hover:text-on-primary transition-colors">Xem lịch</button>
+            </div>
+          </div>
+          <div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+            <div class="relative h-64 overflow-hidden">
+              <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Sân B1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAaxLGF099lB3BGh_Am8eZ14WAHh0RAzGZBiEXT3Oru62eNABeCEeg4o9X6R5GgDRixYvEM0lHCNkdJ9K1KLD9OY68LuucyISSOakK1T1BCUelN6TlCZFFNf_4F6GB7gVON8xrNOM1QfsFWYPzgt-rlQXAMq8bwSdSBC7tSMpeFnZWl8Z1BN05UhhAc6utAA3Ubj2QBHyA12TqwC8nTRwfFFChZGCs0z7ZbmwALpANbOS9SdnMtn3kJWE0pbxd-Z59BzSwdCOZp05n">
+            </div>
+            <div class="p-8">
+              <h4 class="text-xl font-bold font-headline mb-2">Sân 4</h4>
+              <p class="text-on-surface-variant text-sm mb-6">Chuyên dụng tập luyện</p>
+              <button class="w-full bg-surface-container-highest text-on-surface py-3 rounded-full font-bold font-label uppercase text-xs tracking-wider group-hover:bg-primary group-hover:text-on-primary transition-colors">Xem lịch</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-on-surface text-surface py-20 px-8">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+        <div class="col-span-1 md:col-span-1">
+          <h2 class="text-3xl font-black font-headline text-surface mb-6">Galaxy Badminton</h2>
+          <p class="text-surface/50 font-light leading-relaxed mb-8">Hệ thống sân cầu lông cao cấp hàng đầu, nơi hội tụ đam mê và tốc độ.</p>
+        </div>
+        <div>
+          <h4 class="font-bold font-headline mb-6 text-primary tracking-widest uppercase text-xs">Liên kết nhanh</h4>
+          <ul class="flex flex-col gap-4 text-surface/60">
+            <li>Về chúng tôi</li>
+            <li>Bảng giá thành viên</li>
+            <li>Giải đấu sắp tới</li>
+            <li>Cửa hàng dụng cụ</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold font-headline mb-6 text-primary tracking-widest uppercase text-xs">Thông tin</h4>
+          <ul class="flex flex-col gap-4 text-surface/60">
+            <li>Địa chỉ: 123 Đường Galaxy, Quận Cầu Lông</li>
+            <li>Hotline: 0396501813</li>
+            <li>Email: duycuongpdc@gmail.com</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold font-headline mb-6 text-primary tracking-widest uppercase text-xs">Giờ hoạt động</h4>
+          <ul class="flex flex-col gap-4 text-surface/60">
+            <li>Thứ 2 - Thứ 6: 05:00 - 23:00</li>
+            <li>Thứ 7 - CN: 05:00 - 00:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-surface/10 flex flex-col md:flex-row justify-between items-center text-surface/30 text-xs font-label uppercase tracking-widest">
+        <p>© 2024 Galaxy Badminton. Engineered for Speed.</p>
+        <div class="flex gap-8 mt-4 md:mt-0">
+          <a href="#" class="hover:text-primary transition-colors">Chính sách bảo mật</a>
+          <a href="#" class="hover:text-primary transition-colors">Điều khoản dịch vụ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/ui/nav.js"></script>
+</body>
+</html>
