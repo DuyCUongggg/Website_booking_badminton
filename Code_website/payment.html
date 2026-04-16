@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh toán | Galaxy Badminton</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#006b32",
+            surface: "#fcf9f8",
+            "on-surface": "#1c1b1b",
+            "surface-container-low": "#f6f3f2",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#bccabb"
+          },
+          fontFamily: {
+            headline: ["Lexend", "sans-serif"],
+            body: ["Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen">
+  <header class="bg-surface flex justify-between items-center w-full px-8 py-4 fixed top-0 z-50 border-b border-outline-variant/20">
+    <div class="flex items-center gap-8">
+      <a href="index.html" class="text-2xl font-black tracking-tighter uppercase font-headline">Galaxy Badminton</a>
+      <nav id="mainNav" class="hidden md:flex gap-6 items-center"></nav>
+    </div>
+    <div id="headerAuth" class="flex items-center gap-2 shrink-0"></div>
+  </header>
+
+  <main class="pt-24 pb-12 px-8 max-w-6xl mx-auto">
+    <section class="bg-surface-container-low rounded-2xl p-6 shadow-sm border border-outline-variant/20">
+      <h1 class="font-headline text-3xl font-extrabold tracking-tight">Thanh toán đơn đặt sân</h1>
+      <p class="text-sm mt-1 opacity-70">Chọn phương thức thanh toán và hoàn tất giao dịch.</p>
+
+      <div class="grid lg:grid-cols-3 gap-6 mt-6">
+        <div class="lg:col-span-2 bg-white rounded-xl border border-outline-variant/20 p-5 space-y-5">
+          <h2 class="font-headline text-xl font-bold">Phương thức thanh toán</h2>
+
+          <div id="methodGroup" class="flex flex-col gap-3">
+            <button data-method="transfer" class="method-btn px-4 py-4 rounded-xl border border-primary bg-green-50 text-left">
+              <p class="font-bold">Chuyển khoản ngân hàng</p>
+              <p class="text-xs opacity-70">Hỗ trợ hiện tại</p>
+            </button>
+            <button data-method="card" class="method-btn px-4 py-4 rounded-xl border border-outline-variant/40 text-left">
+              <p class="font-bold">Thẻ ngân hàng</p>
+              <p class="text-xs opacity-70">Sắp phát triển</p>
+            </button>
+            <button data-method="ewallet" class="method-btn px-4 py-4 rounded-xl border border-outline-variant/40 text-left">
+              <p class="font-bold">Ví điện tử</p>
+              <p class="text-xs opacity-70">Sắp phát triển</p>
+            </button>
+          </div>
+
+          <div id="transferPanel" class="bg-surface-container-low rounded-xl p-5 border border-outline-variant/20">
+            <h3 class="font-bold mb-3">Thông tin chuyển khoản</h3>
+            <div class="grid md:grid-cols-2 gap-4 items-center">
+              <div class="space-y-2 text-sm">
+                <p><span class="font-semibold">Ngân hàng:</span> BIDV</p>
+                <p><span class="font-semibold">Số tài khoản:</span> 0396501813</p>
+                <p><span class="font-semibold">Chủ tài khoản:</span> PHAM DUY CUONG</p>
+                <p><span class="font-semibold">Nội dung CK:</span> <span id="transferNote">THANHTOAN</span></p>
+              </div>
+              <div class="bg-white rounded-lg border border-outline-variant/20 p-3 text-center">
+                <img id="qrImage" src="assets/payment/Ma_qr.png" alt="Mã QR chuyển khoản" class="w-full max-w-[320px] mx-auto h-auto aspect-[791/1024] object-contain">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-3">
+            <button id="confirmPaymentBtn" class="px-5 py-3 rounded-xl bg-primary text-white font-bold uppercase tracking-wider text-xs">Xác nhận đã chuyển khoản</button>
+            <a href="my-bookings.html" class="px-5 py-3 rounded-xl bg-white border border-outline-variant/30 font-semibold text-sm">Quay lại đơn của tôi</a>
+          </div>
+        </div>
+
+        <aside class="bg-white rounded-xl border border-outline-variant/20 p-5 h-fit">
+          <h2 class="font-headline text-xl font-bold">Chi tiết đơn</h2>
+          <div id="paymentSummary" class="mt-4 space-y-2 text-sm">
+            <p>Đang tải thông tin đơn...</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="js/ui/nav.js"></script>
+  <script type="module" src="js/pages/payment.js"></script>
+</body>
+</html>
